@@ -1,0 +1,25 @@
+<mvc:View controllerName="com.fiori.training.trainingproject.controller.App" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
+    <Shell>
+        <App class="myAppDemoWT">
+            <!-- <Pages> -->
+                <Page title="{i18n>homePageTitle}">
+                    <content>
+                        <mvc:XMLView viewName="com.fiori.training.trainingproject.view.HelloPanel"/>
+                        <!-- <Button id="helloDialogButton" icon="sap-icon://world" text="{i18n>openDialogButtonText}" press=".onOpenDialog" class="sapUiSmallMarginEnd" />
+                        <Button text="{i18n>appTitle}" press=".sayHello" />
+                        <Button text="{i18n>showHelloButtonText}" press=".onShowHello" class="myCustomButton" />
+                        <Input value="{/recipient/name}" valueLiveUpdate="true" width="60%" />
+                        <FormattedText htmlText="Hello {/recipient/name}" class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText" />
+                        <List headerText="{i18n>invoiceListTitle}" class="sapUiResponsiveMargin" width="auto" items="{invoice>/Invoices}">
+                            <items>
+                                <ObjectListItem title="{invoice>Quantity} x {invoice>ProductName}" />
+                            </items>
+                        </List> -->
+
+                        <mvc:XMLView viewName="com.fiori.training.trainingproject.view.InvoiceList" />
+                    </content>
+                </Page>
+            <!-- </Pages> -->
+        </App>
+    </Shell>
+</mvc:View>

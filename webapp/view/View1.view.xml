@@ -1,0 +1,17 @@
+<mvc:View controllerName="com.fiori.training.trainingproject.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content />
+        	<customHeader>
+			<Toolbar>
+				<Button type="Back" press="onPress" />
+				<ToolbarSpacer/>
+				<Title text="Welcome to the training of Fiori" level="H2"/>
+				<ToolbarSpacer/>
+				<Button icon="sap-icon://edit" type="Transparent" press="onPress" ariaLabelledBy="editButtonLabel"/>
+			</Toolbar>
+
+		</customHeader>
+    </Page>
+</mvc:View>
